@@ -1,0 +1,17 @@
+{
+  "tests_passed": 83,
+  "test_log": "검증로그.txt",
+  "cli_exit_code": 0,
+  "pipeline_complete": true,
+  "spectra": 14,
+  "optimal_routes": 2,
+  "method": "reduced_weighted_forest_projected_coefficients_QF_LIA",
+  "statistics": {
+    "fixed_two_edges": 2,
+    "fixed_zero_edges": 0,
+    "free_count_variables": 5,
+    "structural_forest_terms": 30,
+    "per_route_charpoly_calls": 0,
+    "numerical_matrix_eigendecompositions": 0
+  }
+}

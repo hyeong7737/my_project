@@ -1,0 +1,190 @@
+{
+  "counts": [
+    2,
+    2
+  ],
+  "rational_matrix_similar_to_D": [
+    [
+      "7/3",
+      "-4/3",
+      "0"
+    ],
+    [
+      "-8/3",
+      "106/15",
+      "-12/5"
+    ],
+    [
+      "0",
+      "-18/5",
+      "33/5"
+    ]
+  ],
+  "D_exact": [
+    [
+      "7/3",
+      "-4*sqrt(2)/3",
+      "0"
+    ],
+    [
+      "-4*sqrt(2)/3",
+      "106/15",
+      "-6*sqrt(6)/5"
+    ],
+    [
+      "0",
+      "-6*sqrt(6)/5",
+      "33/5"
+    ]
+  ],
+  "normalized_K": [
+    [
+      "7/3",
+      "-4/3",
+      "0"
+    ],
+    [
+      "-4/3",
+      "53/15",
+      "-6/5"
+    ],
+    [
+      "0",
+      "-6/5",
+      "11/5"
+    ]
+  ],
+  "physical_C": [
+    [
+      "1/1000000",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1/2000000",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1/3000000"
+    ]
+  ],
+  "physical_K_inverse_inductance": [
+    [
+      "7000/3",
+      "-4000/3",
+      "0"
+    ],
+    [
+      "-4000/3",
+      "10600/3",
+      "-1200"
+    ],
+    [
+      "0",
+      "-1200",
+      "2200"
+    ]
+  ],
+  "characteristic_polynomial_coefficients": [
+    "1",
+    "-16",
+    "199/3",
+    "-326/5"
+  ],
+  "time_ticks": 13,
+  "time_seconds": "13",
+  "circuit": {
+    "schema": "lc-circuit-v1",
+    "map_name": "matrix-explanation-3-nodes",
+    "ground": 0,
+    "depot": 1,
+    "units": {
+      "tick_seconds": "1",
+      "L_star_henry": "1/1000",
+      "C_star_farad": "1/1000000"
+    },
+    "node_columns": [
+      "id",
+      "x",
+      "y",
+      "house",
+      "C_type",
+      "C_farad",
+      "ground_L_type",
+      "ground_L_henry"
+    ],
+    "branch_columns": [
+      "id",
+      "u",
+      "v",
+      "direction",
+      "L_type",
+      "base_L_henry",
+      "count"
+    ],
+    "nodes": [
+      [
+        1,
+        0,
+        0,
+        0,
+        2,
+        "1/1000000",
+        1,
+        "1/1000"
+      ],
+      [
+        2,
+        1,
+        0,
+        1,
+        2,
+        "1/2000000",
+        1,
+        "1/1000"
+      ],
+      [
+        3,
+        2,
+        0,
+        1,
+        2,
+        "1/3000000",
+        1,
+        "1/1000"
+      ]
+    ],
+    "branches": [
+      [
+        1,
+        1,
+        2,
+        1,
+        1,
+        "3/2000",
+        2
+      ],
+      [
+        2,
+        2,
+        3,
+        1,
+        1,
+        "1/600",
+        2
+      ]
+    ]
+  },
+  "verification": {
+    "target_spectrum_exact": true,
+    "map_edges_only": true,
+    "integer_counts": true,
+    "depot_connected_and_houses_visited": true,
+    "even_degrees": true,
+    "lc_assignment_exact": true,
+    "circuit_map_roundtrip_exact": true
+  }
+}

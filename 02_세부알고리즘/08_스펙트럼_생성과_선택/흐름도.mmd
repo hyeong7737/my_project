@@ -1,0 +1,17 @@
+flowchart TD
+  N0["전체 지도 행렬 복호화"]
+  N1["공동 SpectralProblem 작성"]
+  N2{"SAT / UNSAT / 한도 판정"}
+  N3["정확 c 벡터와 시간 복원"]
+  N4["같은 E 전체를 제외하고 반복"]
+  N5["UNSAT이면 전체 생성 완료"]
+  N6["최소 시간의 모든 스펙트럼 선택"]
+  LIMIT["한도/unknown → 부분 종료"]
+  N0 --> N1
+  N1 --> N2
+  N2 -->|"SAT"| N3
+  N3 --> N4
+  N5 --> N6
+  N2 -->|"한도"| LIMIT
+  N2 -->|"UNSAT"| N5
+  N4 -->|"반복"| N2

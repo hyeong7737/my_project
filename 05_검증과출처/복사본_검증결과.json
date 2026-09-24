@@ -1,0 +1,12 @@
+{
+  "snapshot_modules_hash_verified": 12,
+  "all_imported_from_copy": true,
+  "pipeline_complete": true,
+  "spectra_exact_match": 14,
+  "optimal_route_counts_exact_match": 2,
+  "circuit_roundtrip_verified": true,
+  "illustrative_time_ticks": 13,
+  "svg_diagrams_xml_checked": 16,
+  "local_html_links_checked": 59,
+  "is_performance_benchmark": false
+}

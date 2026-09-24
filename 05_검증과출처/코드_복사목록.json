@@ -1,0 +1,77 @@
+{
+  "snapshot": "2026-09-20",
+  "files": [
+    {
+      "module": "map_data",
+      "source": "연구프로그램/입력·출력 규격 확정/map_data.py",
+      "copy": "02_세부알고리즘/01_입력과_경로조건/map_data.py",
+      "sha256": "0c896d957d15cf57ce2bce70ee2ef4818e457d8af35233637e4ae454ac741b4e"
+    },
+    {
+      "module": "whole_map_matrix",
+      "source": "연구프로그램/스펙트럼 직접 생성/whole_map_matrix.py",
+      "copy": "02_세부알고리즘/02_전체지도_행렬변환/whole_map_matrix.py",
+      "sha256": "c2eb2d1b4819ab3997c80e46306f0ece86012911c7b1cc18f3faedb494b7ee83"
+    },
+    {
+      "module": "lc_model",
+      "source": "연구프로그램/지도–LC 변환 프로그램 완성/lc_model.py",
+      "copy": "02_세부알고리즘/03_LC_규칙과_회로표/lc_model.py",
+      "sha256": "ce166d1723bcd0c0741717275174c0b742e1458dd672c6e1b0533f23dd8a99a5"
+    },
+    {
+      "module": "route_reduction",
+      "source": "연구프로그램/스펙트럼 직접 생성/route_reduction.py",
+      "copy": "02_세부알고리즘/04_안전한_조건축약/route_reduction.py",
+      "sha256": "6d590da46f95ee8cf6369a5ee61c78980696b01663e2cb4e20b567715599591c"
+    },
+    {
+      "module": "forest_coefficients",
+      "source": "연구프로그램/스펙트럼 직접 생성/forest_coefficients.py",
+      "copy": "02_세부알고리즘/05_공통_특성다항식/forest_coefficients.py",
+      "sha256": "f5d20e6ef4b9ce80c9f7f772a3f5f3ad2ced0f7bef02db7cb18c9cf73d191c43"
+    },
+    {
+      "module": "route_constraints",
+      "source": "연구프로그램/스펙트럼 직접 생성/route_constraints.py",
+      "copy": "02_세부알고리즘/06_유효경로_정수제약/route_constraints.py",
+      "sha256": "9dc26532c9f568829b6bb78c850f719638ecc2b88de2b1c4f7ecf604660de2df"
+    },
+    {
+      "module": "spectral_constraints",
+      "source": "연구프로그램/스펙트럼 직접 생성/spectral_constraints.py",
+      "copy": "02_세부알고리즘/07_계수_정수제약_조립/spectral_constraints.py",
+      "sha256": "ffcc132c8390d06f3d047821c6d060bc56274886fd42b53d5c2ea1d66e435613"
+    },
+    {
+      "module": "direct_spectra",
+      "source": "연구프로그램/스펙트럼 직접 생성/direct_spectra.py",
+      "copy": "02_세부알고리즘/08_스펙트럼_생성과_선택/direct_spectra.py",
+      "sha256": "6eb3d71bf5398b1131721cca8c2ac383f812230253f6a7c91f93230c892a5dea"
+    },
+    {
+      "module": "spectral_target",
+      "source": "연구프로그램/스펙트럼 역문제와 회로 복원/spectral_target.py",
+      "copy": "02_세부알고리즘/09_정확_목표스펙트럼/spectral_target.py",
+      "sha256": "37d7c5ac2406964deb79dfb90daaf18c76a63987c207a3fd03da36ec39bbd82a"
+    },
+    {
+      "module": "inverse_spectrum",
+      "source": "연구프로그램/스펙트럼 역문제와 회로 복원/inverse_spectrum.py",
+      "copy": "02_세부알고리즘/10_정확_스펙트럼_역탐색/inverse_spectrum.py",
+      "sha256": "0364ad3edbac0e76a8f6bfd78edc036edc461dfe4250b1c2117682e3c434d12e"
+    },
+    {
+      "module": "matrix_recovery",
+      "source": "연구프로그램/스펙트럼 역문제와 회로 복원/matrix_recovery.py",
+      "copy": "02_세부알고리즘/11_행렬에서_회로복원/matrix_recovery.py",
+      "sha256": "ee2b8ecabdef91ac83b314305117bc13dd7fc9ddc9f0f651252b9f547d3a6f5d"
+    },
+    {
+      "module": "spectral_pipeline",
+      "source": "연구프로그램/스펙트럼 직접 생성/spectral_pipeline.py",
+      "copy": "02_세부알고리즘/12_전체_파이프라인/spectral_pipeline.py",
+      "sha256": "fc510eec15b504ce1df6e82ff6afcc04bcc7324e88d70e57b2513b480ebdb7e7"
+    }
+  ]
+}

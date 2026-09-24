@@ -1,0 +1,48 @@
+{
+  "schema": "lc-whole-map-v1",
+  "name": "matrix-explanation-3-nodes",
+  "depot": 1,
+  "matrix_kind": "rational_R_all_edges_one",
+  "units": {
+    "tick_seconds": "1",
+    "L_star_henry": "1/1000",
+    "C_star_farad": "1/1000000"
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "x": 0,
+      "y": 0,
+      "house": false
+    },
+    {
+      "id": 2,
+      "x": 1,
+      "y": 0,
+      "house": true
+    },
+    {
+      "id": 3,
+      "x": 2,
+      "y": 0,
+      "house": true
+    }
+  ],
+  "R_map": [
+    [
+      "5/3",
+      "-2/3",
+      "0"
+    ],
+    [
+      "-4/3",
+      "68/15",
+      "-6/5"
+    ],
+    [
+      "0",
+      "-9/5",
+      "24/5"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "lc-spectrum-target-v1",
+  "characteristic_polynomial_coefficients": [
+    "1",
+    "-16",
+    "199/3",
+    "-326/5"
+  ],
+  "dimension": 3,
+  "trace": "16",
+  "trace_square": "370/3"
+}

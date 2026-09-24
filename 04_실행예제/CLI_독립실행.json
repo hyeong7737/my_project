@@ -1,0 +1,2202 @@
+{
+  "schema": "lc-spectral-pipeline-v1",
+  "generation": {
+    "schema": "lc-generated-spectra-v1",
+    "whole_map": {
+      "schema": "lc-whole-map-v1",
+      "name": "forced-corridor-square-optional-spur",
+      "depot": 1,
+      "matrix_kind": "rational_R_all_edges_one",
+      "units": {
+        "tick_seconds": "1",
+        "L_star_henry": "1/1000",
+        "C_star_farad": "1/1000000"
+      },
+      "nodes": [
+        {
+          "id": 1,
+          "x": 0,
+          "y": 0,
+          "house": false
+        },
+        {
+          "id": 2,
+          "x": 1,
+          "y": 0,
+          "house": false
+        },
+        {
+          "id": 3,
+          "x": 2,
+          "y": 0,
+          "house": false
+        },
+        {
+          "id": 4,
+          "x": 3,
+          "y": 0,
+          "house": true
+        },
+        {
+          "id": 5,
+          "x": 0,
+          "y": 1,
+          "house": true
+        },
+        {
+          "id": 6,
+          "x": 1,
+          "y": 1,
+          "house": false
+        },
+        {
+          "id": 7,
+          "x": 0,
+          "y": 2,
+          "house": false
+        }
+      ],
+      "R_map": [
+        [
+          "5/2",
+          "-1",
+          "0",
+          "0",
+          "-1/2",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "4",
+          "-3/2",
+          "0",
+          "0",
+          "-1/2",
+          "0"
+        ],
+        [
+          "0",
+          "-3/2",
+          "3",
+          "-1/2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-3/2",
+          "9/2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1/2",
+          "0",
+          "0",
+          "0",
+          "3",
+          "-1",
+          "-1/2"
+        ],
+        [
+          "0",
+          "-1/2",
+          "0",
+          "0",
+          "-1",
+          "5/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/2",
+          "0",
+          "3/2"
+        ]
+      ]
+    },
+    "map": {
+      "schema": "lc-grid-v1",
+      "name": "forced-corridor-square-optional-spur",
+      "depot": 1,
+      "units": {
+        "tick_seconds": "1",
+        "L_star_henry": "1/1000",
+        "C_star_farad": "1/1000000"
+      },
+      "nodes": [
+        {
+          "id": 1,
+          "x": 0,
+          "y": 0,
+          "house": false,
+          "delay": 0
+        },
+        {
+          "id": 2,
+          "x": 1,
+          "y": 0,
+          "house": false,
+          "delay": 0
+        },
+        {
+          "id": 3,
+          "x": 2,
+          "y": 0,
+          "house": false,
+          "delay": 0
+        },
+        {
+          "id": 4,
+          "x": 3,
+          "y": 0,
+          "house": true,
+          "delay": 2
+        },
+        {
+          "id": 5,
+          "x": 0,
+          "y": 1,
+          "house": true,
+          "delay": 0
+        },
+        {
+          "id": 6,
+          "x": 1,
+          "y": 1,
+          "house": false,
+          "delay": 0
+        },
+        {
+          "id": 7,
+          "x": 0,
+          "y": 2,
+          "house": false,
+          "delay": 0
+        }
+      ],
+      "edges": [
+        {
+          "id": 1,
+          "u": 1,
+          "v": 2,
+          "time": 2
+        },
+        {
+          "id": 2,
+          "u": 1,
+          "v": 5,
+          "time": 1
+        },
+        {
+          "id": 3,
+          "u": 2,
+          "v": 3,
+          "time": 3
+        },
+        {
+          "id": 4,
+          "u": 2,
+          "v": 6,
+          "time": 1
+        },
+        {
+          "id": 5,
+          "u": 3,
+          "v": 4,
+          "time": 2
+        },
+        {
+          "id": 6,
+          "u": 5,
+          "v": 6,
+          "time": 2
+        },
+        {
+          "id": 7,
+          "u": 5,
+          "v": 7,
+          "time": 1
+        }
+      ]
+    },
+    "domain": {
+      "counts_per_edge": [
+        0,
+        1,
+        2
+      ],
+      "preserves_all_optimal_routes": true,
+      "includes_all_unbounded_nonoptimal_walks": false
+    },
+    "method": "reduced_weighted_forest_projected_coefficients_QF_LIA",
+    "complete": true,
+    "status": "complete",
+    "stop_reason": null,
+    "spectra": [
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-25",
+          "236",
+          "-1080",
+          "2587",
+          "-3299",
+          "2120",
+          "-540"
+        ],
+        "integer_coefficient_key": [
+          "25",
+          "944",
+          "4320",
+          "20696",
+          "26392",
+          "16960",
+          "4320"
+        ],
+        "time_ticks": 18,
+        "time_seconds": "18",
+        "existence_witness_counts": [
+          2,
+          2,
+          2,
+          0,
+          2,
+          0,
+          0
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-25",
+          "485/2",
+          "-1183",
+          "6287/2",
+          "-9131/2",
+          "3372",
+          "-1971/2"
+        ],
+        "integer_coefficient_key": [
+          "25",
+          "970",
+          "4732",
+          "25148",
+          "36524",
+          "26976",
+          "7884"
+        ],
+        "time_ticks": 18,
+        "time_seconds": "18",
+        "existence_witness_counts": [
+          1,
+          1,
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-27",
+          "279",
+          "-1427",
+          "3911",
+          "-5785",
+          "4317",
+          "-1269"
+        ],
+        "integer_coefficient_key": [
+          "27",
+          "1116",
+          "5708",
+          "31288",
+          "46280",
+          "34536",
+          "10152"
+        ],
+        "time_ticks": 20,
+        "time_seconds": "20",
+        "existence_witness_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-27",
+          "283",
+          "-1483",
+          "4172",
+          "-6290",
+          "4748",
+          "-1404"
+        ],
+        "integer_coefficient_key": [
+          "27",
+          "1132",
+          "5932",
+          "33376",
+          "50320",
+          "37984",
+          "11232"
+        ],
+        "time_ticks": 20,
+        "time_seconds": "20",
+        "existence_witness_counts": [
+          2,
+          2,
+          2,
+          0,
+          2,
+          0,
+          2
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-27",
+          "285",
+          "-1505",
+          "4247",
+          "-6409",
+          "4839",
+          "-1431"
+        ],
+        "integer_coefficient_key": [
+          "27",
+          "1140",
+          "6020",
+          "33976",
+          "51272",
+          "38712",
+          "11448"
+        ],
+        "time_ticks": 20,
+        "time_seconds": "20",
+        "existence_witness_counts": [
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-27",
+          "289",
+          "-1589",
+          "19389/4",
+          "-32851/4",
+          "28639/4",
+          "-9909/4"
+        ],
+        "integer_coefficient_key": [
+          "27",
+          "1156",
+          "6356",
+          "38778",
+          "65702",
+          "57278",
+          "19818"
+        ],
+        "time_ticks": 20,
+        "time_seconds": "20",
+        "existence_witness_counts": [
+          1,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-29",
+          "327",
+          "-1841",
+          "5529",
+          "-8813",
+          "6959",
+          "-2133"
+        ],
+        "integer_coefficient_key": [
+          "29",
+          "1308",
+          "7364",
+          "44232",
+          "70504",
+          "55672",
+          "17064"
+        ],
+        "time_ticks": 22,
+        "time_seconds": "22",
+        "existence_witness_counts": [
+          2,
+          0,
+          2,
+          2,
+          2,
+          2,
+          0
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-29",
+          "330",
+          "-1910",
+          "6073",
+          "-10607",
+          "9424",
+          "-3294"
+        ],
+        "integer_coefficient_key": [
+          "29",
+          "1320",
+          "7640",
+          "48584",
+          "84856",
+          "75392",
+          "26352"
+        ],
+        "time_ticks": 22,
+        "time_seconds": "22",
+        "existence_witness_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-29",
+          "330",
+          "-1886",
+          "5757",
+          "-9281",
+          "7376",
+          "-2268"
+        ],
+        "integer_coefficient_key": [
+          "29",
+          "1320",
+          "7544",
+          "46056",
+          "74248",
+          "59008",
+          "18144"
+        ],
+        "time_ticks": 22,
+        "time_seconds": "22",
+        "existence_witness_counts": [
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          0
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-29",
+          "334",
+          "-1962",
+          "6303",
+          "-11065",
+          "9862",
+          "-3456"
+        ],
+        "integer_coefficient_key": [
+          "29",
+          "1336",
+          "7848",
+          "50424",
+          "88520",
+          "78896",
+          "27648"
+        ],
+        "time_ticks": 22,
+        "time_seconds": "22",
+        "existence_witness_counts": [
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-31",
+          "379",
+          "-2347",
+          "7849",
+          "-13975",
+          "12147",
+          "-4023"
+        ],
+        "integer_coefficient_key": [
+          "31",
+          "1516",
+          "9388",
+          "62792",
+          "111800",
+          "97176",
+          "32184"
+        ],
+        "time_ticks": 24,
+        "time_seconds": "24",
+        "existence_witness_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-31",
+          "381",
+          "-2393",
+          "8241",
+          "-15483",
+          "14633",
+          "-5373"
+        ],
+        "integer_coefficient_key": [
+          "31",
+          "1524",
+          "9572",
+          "65928",
+          "123864",
+          "117064",
+          "42984"
+        ],
+        "time_ticks": 24,
+        "time_seconds": "24",
+        "existence_witness_counts": [
+          2,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-31",
+          "383",
+          "-2423",
+          "8396",
+          "-15822",
+          "14980",
+          "-5508"
+        ],
+        "integer_coefficient_key": [
+          "31",
+          "1532",
+          "9692",
+          "67168",
+          "126576",
+          "119840",
+          "44064"
+        ],
+        "time_ticks": 24,
+        "time_seconds": "24",
+        "existence_witness_counts": [
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          2
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      },
+      {
+        "characteristic_polynomial_coefficients": [
+          "1",
+          "-33",
+          "436",
+          "-2972",
+          "11205",
+          "-23179",
+          "24136",
+          "-9666"
+        ],
+        "integer_coefficient_key": [
+          "33",
+          "1744",
+          "11888",
+          "89640",
+          "185432",
+          "193088",
+          "77328"
+        ],
+        "time_ticks": 26,
+        "time_seconds": "26",
+        "existence_witness_counts": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "spectrum_representation": "all_roots_of_exact_characteristic_polynomial_with_multiplicity"
+      }
+    ],
+    "statistics": {
+      "constraint_builds": 1,
+      "solver_checks": 15,
+      "spectra_emitted": 14,
+      "whole_spectrum_exclusion_clauses": 14,
+      "application_route_enumerations": 0,
+      "per_route_charpoly_calls": 0,
+      "numerical_matrix_eigendecompositions": 0,
+      "root_isolations": 0,
+      "internal_solver_search_not_counted_as_zero": true,
+      "structural_forest_terms": 30,
+      "coefficient_construction": "forced_bridge_absorption",
+      "fixed_count_values": {
+        "2": 2,
+        "4": 2
+      },
+      "fixed_count_edge_ids_are_zero_based": true,
+      "fixed_zero_edges": 0,
+      "fixed_two_edges": 2,
+      "free_count_variables": 5,
+      "parity_restricted_free_bridges": 1,
+      "fixed_bridge_subsets_enumerated": 0,
+      "shared_product_variables": 24,
+      "coefficient_outputs": 7,
+      "constraint_count": 155,
+      "logic": "QF_LIA",
+      "solver_statistics": {
+        "conflicts": 213,
+        "decisions": 1776,
+        "propagations": 8930,
+        "binary propagations": 6814,
+        "final checks": 32,
+        "added eqs": 13714,
+        "mk clause": 5134,
+        "mk clause binary": 857,
+        "del clause": 4904,
+        "minimized lits": 409,
+        "num checks": 14,
+        "mk bool var": 7254,
+        "arith eq adapter": 4218,
+        "arith-lower": 7339,
+        "arith-upper": 8713,
+        "arith-fixed-eqs": 4289,
+        "arith-offset-eqs": 700,
+        "arith-conflicts": 150,
+        "arith-bound-propagations-lp": 10609,
+        "arith-diseq": 6796,
+        "arith-branch": 3,
+        "arith-make-feasible": 2656,
+        "arith-max-columns": 324,
+        "arith-max-rows": 181,
+        "arith-cube-calls": 8,
+        "arith-lcube-calls": 3,
+        "arith-patches": 19,
+        "arith-hnf-calls": 7,
+        "arith-dio-calls": 18,
+        "arith-dio-tighten-conflicts": 14,
+        "arith-dio-rewrite-conflicts": 2,
+        "num allocs": 13455847,
+        "rlimit count": 203414,
+        "max memory": 20.63,
+        "memory": 20.54,
+        "time": 0.014
+      },
+      "elapsed_seconds": 0.20516409999981988
+    },
+    "coefficient_denominators": [
+      "1",
+      "4",
+      "4",
+      "8",
+      "8",
+      "8",
+      "8"
+    ],
+    "selection": {
+      "best_observed_time_ticks": 18,
+      "minimum_certified": true,
+      "optimal_spectrum_indices": [
+        0,
+        1
+      ],
+      "indices_are_zero_based": true
+    }
+  },
+  "complete": true,
+  "optimal_time_certified": true,
+  "inverse_results": [
+    {
+      "spectrum_index": 0,
+      "result": {
+        "schema": "lc-inverse-result-v1",
+        "map": {
+          "schema": "lc-grid-v1",
+          "name": "forced-corridor-square-optional-spur",
+          "depot": 1,
+          "units": {
+            "tick_seconds": "1",
+            "L_star_henry": "1/1000",
+            "C_star_farad": "1/1000000"
+          },
+          "nodes": [
+            {
+              "id": 1,
+              "x": 0,
+              "y": 0,
+              "house": false,
+              "delay": 0
+            },
+            {
+              "id": 2,
+              "x": 1,
+              "y": 0,
+              "house": false,
+              "delay": 0
+            },
+            {
+              "id": 3,
+              "x": 2,
+              "y": 0,
+              "house": false,
+              "delay": 0
+            },
+            {
+              "id": 4,
+              "x": 3,
+              "y": 0,
+              "house": true,
+              "delay": 2
+            },
+            {
+              "id": 5,
+              "x": 0,
+              "y": 1,
+              "house": true,
+              "delay": 0
+            },
+            {
+              "id": 6,
+              "x": 1,
+              "y": 1,
+              "house": false,
+              "delay": 0
+            },
+            {
+              "id": 7,
+              "x": 0,
+              "y": 2,
+              "house": false,
+              "delay": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": 1,
+              "u": 1,
+              "v": 2,
+              "time": 2
+            },
+            {
+              "id": 2,
+              "u": 1,
+              "v": 5,
+              "time": 1
+            },
+            {
+              "id": 3,
+              "u": 2,
+              "v": 3,
+              "time": 3
+            },
+            {
+              "id": 4,
+              "u": 2,
+              "v": 6,
+              "time": 1
+            },
+            {
+              "id": 5,
+              "u": 3,
+              "v": 4,
+              "time": 2
+            },
+            {
+              "id": 6,
+              "u": 5,
+              "v": 6,
+              "time": 2
+            },
+            {
+              "id": 7,
+              "u": 5,
+              "v": 7,
+              "time": 1
+            }
+          ]
+        },
+        "target": {
+          "schema": "lc-spectrum-target-v1",
+          "characteristic_polynomial_coefficients": [
+            "1",
+            "-25",
+            "236",
+            "-1080",
+            "2587",
+            "-3299",
+            "2120",
+            "-540"
+          ],
+          "dimension": 7,
+          "trace": "25",
+          "trace_square": "153"
+        },
+        "domain": {
+          "mode": "explicit_count_cap",
+          "max_count": 2,
+          "travel_budget_ticks": "16",
+          "effective_edge_caps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "complete": true,
+        "status": "complete",
+        "stop_reason": null,
+        "statistics": {
+          "states_visited": 64,
+          "pruned_trace": 0,
+          "pruned_parity": 23,
+          "pruned_connectivity": 11,
+          "pruned_second_moment": 5,
+          "characteristic_polynomials_checked": 1
+        },
+        "solutions": [
+          {
+            "counts": [
+              2,
+              2,
+              2,
+              0,
+              2,
+              0,
+              0
+            ],
+            "rational_matrix_similar_to_D": [
+              [
+                "4",
+                "-2",
+                "0",
+                "0",
+                "-1",
+                "0",
+                "0"
+              ],
+              [
+                "-2",
+                "6",
+                "-3",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "-3",
+                "5",
+                "-1",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "-3",
+                "6",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "-1",
+                "0",
+                "0",
+                "0",
+                "2",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1"
+              ]
+            ],
+            "D_exact": [
+              [
+                "4",
+                "-2",
+                "0",
+                "0",
+                "-1",
+                "0",
+                "0"
+              ],
+              [
+                "-2",
+                "6",
+                "-3",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "-3",
+                "5",
+                "-sqrt(3)",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "-sqrt(3)",
+                "6",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "-1",
+                "0",
+                "0",
+                "0",
+                "2",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1"
+              ]
+            ],
+            "normalized_K": [
+              [
+                "4",
+                "-2",
+                "0",
+                "0",
+                "-1",
+                "0",
+                "0"
+              ],
+              [
+                "-2",
+                "6",
+                "-3",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "-3",
+                "5",
+                "-1",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "-1",
+                "2",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "-1",
+                "0",
+                "0",
+                "0",
+                "2",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1"
+              ]
+            ],
+            "physical_C": [
+              [
+                "1/1000000",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "1/1000000",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "1/1000000",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "1/3000000",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "1/1000000",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1/1000000",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1/1000000"
+              ]
+            ],
+            "physical_K_inverse_inductance": [
+              [
+                "4000",
+                "-2000",
+                "0",
+                "0",
+                "-1000",
+                "0",
+                "0"
+              ],
+              [
+                "-2000",
+                "6000",
+                "-3000",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "-3000",
+                "5000",
+                "-1000",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "-1000",
+                "2000",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "-1000",
+                "0",
+                "0",
+                "0",
+                "2000",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1000",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1000"
+              ]
+            ],
+            "characteristic_polynomial_coefficients": [
+              "1",
+              "-25",
+              "236",
+              "-1080",
+              "2587",
+              "-3299",
+              "2120",
+              "-540"
+            ],
+            "time_ticks": 18,
+            "time_seconds": "18",
+            "circuit": {
+              "schema": "lc-circuit-v1",
+              "map_name": "forced-corridor-square-optional-spur",
+              "ground": 0,
+              "depot": 1,
+              "units": {
+                "tick_seconds": "1",
+                "L_star_henry": "1/1000",
+                "C_star_farad": "1/1000000"
+              },
+              "node_columns": [
+                "id",
+                "x",
+                "y",
+                "house",
+                "C_type",
+                "C_farad",
+                "ground_L_type",
+                "ground_L_henry"
+              ],
+              "branch_columns": [
+                "id",
+                "u",
+                "v",
+                "direction",
+                "L_type",
+                "base_L_henry",
+                "count"
+              ],
+              "nodes": [
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  2,
+                  1,
+                  0,
+                  0,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  3,
+                  2,
+                  0,
+                  0,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  4,
+                  3,
+                  0,
+                  1,
+                  2,
+                  "1/3000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  5,
+                  0,
+                  1,
+                  1,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  6,
+                  1,
+                  1,
+                  0,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  7,
+                  0,
+                  2,
+                  0,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ]
+              ],
+              "branches": [
+                [
+                  1,
+                  1,
+                  2,
+                  1,
+                  1,
+                  "1/1000",
+                  2
+                ],
+                [
+                  2,
+                  1,
+                  5,
+                  2,
+                  1,
+                  "1/500",
+                  2
+                ],
+                [
+                  3,
+                  2,
+                  3,
+                  1,
+                  1,
+                  "1/1500",
+                  2
+                ],
+                [
+                  4,
+                  2,
+                  6,
+                  2,
+                  1,
+                  "1/500",
+                  0
+                ],
+                [
+                  5,
+                  3,
+                  4,
+                  1,
+                  1,
+                  "1/500",
+                  2
+                ],
+                [
+                  6,
+                  5,
+                  6,
+                  1,
+                  1,
+                  "1/1000",
+                  0
+                ],
+                [
+                  7,
+                  5,
+                  7,
+                  2,
+                  1,
+                  "1/500",
+                  0
+                ]
+              ]
+            },
+            "verification": {
+              "target_spectrum_exact": true,
+              "map_edges_only": true,
+              "integer_counts": true,
+              "depot_connected_and_houses_visited": true,
+              "even_degrees": true,
+              "lc_assignment_exact": true,
+              "circuit_map_roundtrip_exact": true
+            },
+            "discovered_by": "exact_integer_spectral_search"
+          }
+        ],
+        "solution_count": 1,
+        "existence": "yes",
+        "projection": {
+          "method": "alternating_projection_relaxed_LC_family",
+          "restarts_requested": 0,
+          "restarts_completed": 0,
+          "iterations": 0,
+          "accepted_new_solutions": 0,
+          "certifies_completeness": false,
+          "best_relative_family_gap": null,
+          "skipped": "disabled_or_no_free_edge"
+        },
+        "algorithm": "structured_IEP_projection_plus_exact_integer_search"
+      }
+    },
+    {
+      "spectrum_index": 1,
+      "result": {
+        "schema": "lc-inverse-result-v1",
+        "map": {
+          "schema": "lc-grid-v1",
+          "name": "forced-corridor-square-optional-spur",
+          "depot": 1,
+          "units": {
+            "tick_seconds": "1",
+            "L_star_henry": "1/1000",
+            "C_star_farad": "1/1000000"
+          },
+          "nodes": [
+            {
+              "id": 1,
+              "x": 0,
+              "y": 0,
+              "house": false,
+              "delay": 0
+            },
+            {
+              "id": 2,
+              "x": 1,
+              "y": 0,
+              "house": false,
+              "delay": 0
+            },
+            {
+              "id": 3,
+              "x": 2,
+              "y": 0,
+              "house": false,
+              "delay": 0
+            },
+            {
+              "id": 4,
+              "x": 3,
+              "y": 0,
+              "house": true,
+              "delay": 2
+            },
+            {
+              "id": 5,
+              "x": 0,
+              "y": 1,
+              "house": true,
+              "delay": 0
+            },
+            {
+              "id": 6,
+              "x": 1,
+              "y": 1,
+              "house": false,
+              "delay": 0
+            },
+            {
+              "id": 7,
+              "x": 0,
+              "y": 2,
+              "house": false,
+              "delay": 0
+            }
+          ],
+          "edges": [
+            {
+              "id": 1,
+              "u": 1,
+              "v": 2,
+              "time": 2
+            },
+            {
+              "id": 2,
+              "u": 1,
+              "v": 5,
+              "time": 1
+            },
+            {
+              "id": 3,
+              "u": 2,
+              "v": 3,
+              "time": 3
+            },
+            {
+              "id": 4,
+              "u": 2,
+              "v": 6,
+              "time": 1
+            },
+            {
+              "id": 5,
+              "u": 3,
+              "v": 4,
+              "time": 2
+            },
+            {
+              "id": 6,
+              "u": 5,
+              "v": 6,
+              "time": 2
+            },
+            {
+              "id": 7,
+              "u": 5,
+              "v": 7,
+              "time": 1
+            }
+          ]
+        },
+        "target": {
+          "schema": "lc-spectrum-target-v1",
+          "characteristic_polynomial_coefficients": [
+            "1",
+            "-25",
+            "485/2",
+            "-1183",
+            "6287/2",
+            "-9131/2",
+            "3372",
+            "-1971/2"
+          ],
+          "dimension": 7,
+          "trace": "25",
+          "trace_square": "140"
+        },
+        "domain": {
+          "mode": "explicit_count_cap",
+          "max_count": 2,
+          "travel_budget_ticks": "16",
+          "effective_edge_caps": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "complete": true,
+        "status": "complete",
+        "stop_reason": null,
+        "statistics": {
+          "states_visited": 70,
+          "pruned_trace": 0,
+          "pruned_parity": 28,
+          "pruned_connectivity": 11,
+          "pruned_second_moment": 4,
+          "characteristic_polynomials_checked": 1
+        },
+        "solutions": [
+          {
+            "counts": [
+              1,
+              1,
+              2,
+              1,
+              2,
+              1,
+              0
+            ],
+            "rational_matrix_similar_to_D": [
+              [
+                "5/2",
+                "-1",
+                "0",
+                "0",
+                "-1/2",
+                "0",
+                "0"
+              ],
+              [
+                "-1",
+                "11/2",
+                "-3",
+                "0",
+                "0",
+                "-1/2",
+                "0"
+              ],
+              [
+                "0",
+                "-3",
+                "5",
+                "-1",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "-3",
+                "6",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "-1/2",
+                "0",
+                "0",
+                "0",
+                "5/2",
+                "-1",
+                "0"
+              ],
+              [
+                "0",
+                "-1/2",
+                "0",
+                "0",
+                "-1",
+                "5/2",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1"
+              ]
+            ],
+            "D_exact": [
+              [
+                "5/2",
+                "-1",
+                "0",
+                "0",
+                "-1/2",
+                "0",
+                "0"
+              ],
+              [
+                "-1",
+                "11/2",
+                "-3",
+                "0",
+                "0",
+                "-1/2",
+                "0"
+              ],
+              [
+                "0",
+                "-3",
+                "5",
+                "-sqrt(3)",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "-sqrt(3)",
+                "6",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "-1/2",
+                "0",
+                "0",
+                "0",
+                "5/2",
+                "-1",
+                "0"
+              ],
+              [
+                "0",
+                "-1/2",
+                "0",
+                "0",
+                "-1",
+                "5/2",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1"
+              ]
+            ],
+            "normalized_K": [
+              [
+                "5/2",
+                "-1",
+                "0",
+                "0",
+                "-1/2",
+                "0",
+                "0"
+              ],
+              [
+                "-1",
+                "11/2",
+                "-3",
+                "0",
+                "0",
+                "-1/2",
+                "0"
+              ],
+              [
+                "0",
+                "-3",
+                "5",
+                "-1",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "-1",
+                "2",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "-1/2",
+                "0",
+                "0",
+                "0",
+                "5/2",
+                "-1",
+                "0"
+              ],
+              [
+                "0",
+                "-1/2",
+                "0",
+                "0",
+                "-1",
+                "5/2",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1"
+              ]
+            ],
+            "physical_C": [
+              [
+                "1/1000000",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "1/1000000",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "1/1000000",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "1/3000000",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "1/1000000",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1/1000000",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1/1000000"
+              ]
+            ],
+            "physical_K_inverse_inductance": [
+              [
+                "2500",
+                "-1000",
+                "0",
+                "0",
+                "-500",
+                "0",
+                "0"
+              ],
+              [
+                "-1000",
+                "5500",
+                "-3000",
+                "0",
+                "0",
+                "-500",
+                "0"
+              ],
+              [
+                "0",
+                "-3000",
+                "5000",
+                "-1000",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "-1000",
+                "2000",
+                "0",
+                "0",
+                "0"
+              ],
+              [
+                "-500",
+                "0",
+                "0",
+                "0",
+                "2500",
+                "-1000",
+                "0"
+              ],
+              [
+                "0",
+                "-500",
+                "0",
+                "0",
+                "-1000",
+                "2500",
+                "0"
+              ],
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "1000"
+              ]
+            ],
+            "characteristic_polynomial_coefficients": [
+              "1",
+              "-25",
+              "485/2",
+              "-1183",
+              "6287/2",
+              "-9131/2",
+              "3372",
+              "-1971/2"
+            ],
+            "time_ticks": 18,
+            "time_seconds": "18",
+            "circuit": {
+              "schema": "lc-circuit-v1",
+              "map_name": "forced-corridor-square-optional-spur",
+              "ground": 0,
+              "depot": 1,
+              "units": {
+                "tick_seconds": "1",
+                "L_star_henry": "1/1000",
+                "C_star_farad": "1/1000000"
+              },
+              "node_columns": [
+                "id",
+                "x",
+                "y",
+                "house",
+                "C_type",
+                "C_farad",
+                "ground_L_type",
+                "ground_L_henry"
+              ],
+              "branch_columns": [
+                "id",
+                "u",
+                "v",
+                "direction",
+                "L_type",
+                "base_L_henry",
+                "count"
+              ],
+              "nodes": [
+                [
+                  1,
+                  0,
+                  0,
+                  0,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  2,
+                  1,
+                  0,
+                  0,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  3,
+                  2,
+                  0,
+                  0,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  4,
+                  3,
+                  0,
+                  1,
+                  2,
+                  "1/3000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  5,
+                  0,
+                  1,
+                  1,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  6,
+                  1,
+                  1,
+                  0,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ],
+                [
+                  7,
+                  0,
+                  2,
+                  0,
+                  2,
+                  "1/1000000",
+                  1,
+                  "1/1000"
+                ]
+              ],
+              "branches": [
+                [
+                  1,
+                  1,
+                  2,
+                  1,
+                  1,
+                  "1/1000",
+                  1
+                ],
+                [
+                  2,
+                  1,
+                  5,
+                  2,
+                  1,
+                  "1/500",
+                  1
+                ],
+                [
+                  3,
+                  2,
+                  3,
+                  1,
+                  1,
+                  "1/1500",
+                  2
+                ],
+                [
+                  4,
+                  2,
+                  6,
+                  2,
+                  1,
+                  "1/500",
+                  1
+                ],
+                [
+                  5,
+                  3,
+                  4,
+                  1,
+                  1,
+                  "1/500",
+                  2
+                ],
+                [
+                  6,
+                  5,
+                  6,
+                  1,
+                  1,
+                  "1/1000",
+                  1
+                ],
+                [
+                  7,
+                  5,
+                  7,
+                  2,
+                  1,
+                  "1/500",
+                  0
+                ]
+              ]
+            },
+            "verification": {
+              "target_spectrum_exact": true,
+              "map_edges_only": true,
+              "integer_counts": true,
+              "depot_connected_and_houses_visited": true,
+              "even_degrees": true,
+              "lc_assignment_exact": true,
+              "circuit_map_roundtrip_exact": true
+            },
+            "discovered_by": "exact_integer_spectral_search"
+          }
+        ],
+        "solution_count": 1,
+        "existence": "yes",
+        "projection": {
+          "method": "alternating_projection_relaxed_LC_family",
+          "restarts_requested": 0,
+          "restarts_completed": 0,
+          "iterations": 0,
+          "accepted_new_solutions": 0,
+          "certifies_completeness": false,
+          "best_relative_family_gap": null,
+          "skipped": "disabled_or_no_free_edge"
+        },
+        "algorithm": "structured_IEP_projection_plus_exact_integer_search"
+      }
+    }
+  ],
+  "optimal_route_counts": [
+    [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      0
+    ],
+    [
+      2,
+      2,
+      2,
+      0,
+      2,
+      0,
+      0
+    ]
+  ],
+  "all_optimal_routes_recovered": true,
+  "stop_reason": null
+}
